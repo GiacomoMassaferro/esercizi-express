@@ -1,0 +1,1 @@
+# crea una rotta POST /prodotti che accetta un nuovo prodotto nel body della richiesta e lo aggiunge alla lista, restituendo il prodotto creato con un id generato
