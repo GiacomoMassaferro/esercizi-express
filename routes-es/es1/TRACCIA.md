@@ -1,0 +1,1 @@
+# crea un server Express con una rotta GET che restituisce un messaggio di benvenuto in formato JSON con l'orario corrente del server
