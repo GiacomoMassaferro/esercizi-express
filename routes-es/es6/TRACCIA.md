@@ -1,0 +1,1 @@
+# crea una rotta DELETE /prodotti/:id che rimuove un prodotto dalla lista e restituisce un messaggio di successo o un errore se l'id non esiste
