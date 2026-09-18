@@ -1,0 +1,24 @@
+import express from "express";
+
+const app = express();
+const port = 3000;
+
+// middleware per interpretare il body JSON delle richieste
+app.use(express.json());
+
+// middleware di logging custom
+app.use((req, res, next) => {
+    const orario = new Date().toLocaleTimeString();
+    console.log(`[${orario}] ${req.method} ${req.originalUrl}`);
+    next();
+});
+
+// rotta base http://localhost:3000/
+app.get('/', (req, res) => {
+    res.send('Server attivo e logger operativo');
+});
+
+// avvio del server
+app.listen(port, () => {
+    console.log(`Server avviato su http://localhost:${port}`);
+});
